@@ -19,7 +19,7 @@ class _MyHomePageState extends State<MyHomePage> {
         onPressed: () {
             setState(() {
               Calculation calculate = Calculation(input: input, display: display);
-              calculate.buttonPressedRectangleInput(info, input, display);
+              input = calculate.buttonPressedRectangleInput(info, input, display);
             });
         },
         child: Container(
@@ -45,8 +45,9 @@ class _MyHomePageState extends State<MyHomePage> {
         onTap: () {
          setState(() {
            Calculation circle = Calculation(input: input, display: display);
-           input = circle.buttonPressedCircleInput(icon, input);
-
+           input = circle.buttonPressedCircleInput(icon, );
+           Calculation hell = Calculation(input: input, display: display);
+           display = hell.buttonPressedCircleDisplay(icon, display);
          });
         },
         child: Container(
@@ -63,6 +64,19 @@ class _MyHomePageState extends State<MyHomePage> {
       ),
     );
   }
+  Widget iconMenus(IconData icon, int size) {
+    return TextButton(
+      onPressed:(){
+        setState(() {
+          Calculation calculate = Calculation(input: input, display: display);
+          display = calculate.onIconPressed(icon, display);
+        });
+        // onIconPressed();
+      },child: Icon(icon,
+      size: MediaQuery.of(context).size.aspectRatio*size, color: Color(0xFF46595C),),
+    );
+  }
+
 
   @override
   Widget build(BuildContext context) {
@@ -123,13 +137,13 @@ class _MyHomePageState extends State<MyHomePage> {
                 SizedBox(
                   width: 10,
                 ),
-                Icon(Icons.refresh, size: MediaQuery.of(context).size.aspectRatio*75,),
-                Icon(Icons.calculate_rounded, size: MediaQuery.of(context).size.aspectRatio*75,),
-                Icon(Icons.settings, size: MediaQuery.of(context).size.aspectRatio*75,),
+                iconMenus(Icons.refresh , 95,),
+                iconMenus(FontAwesomeIcons.calculator ,73,),
+                iconMenus(Icons.settings ,95,),
                 SizedBox(
-                  width: MediaQuery.of(context).size.width*0.62,
+                  width: MediaQuery.of(context).size.width*0.525,
                 ),
-                Icon(Icons.cancel, size: MediaQuery.of(context).size.aspectRatio*75,)
+                iconMenus(Icons.cancel ,95,),
               ],
             ),
             SizedBox(
@@ -307,4 +321,8 @@ class _MyHomePageState extends State<MyHomePage> {
     ),);
   }
 }
+
+
+
+
 
