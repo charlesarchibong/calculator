@@ -4,7 +4,7 @@
 
 ![History](https://user-images.githubusercontent.com/81038700/132940968-8feed3e8-d95b-4de5-b109-c0badb7bbb62.png)
 
-![themes](https://user-images.githubusercontent.com/81038700/132940981-a99e800a-d67e-4a24-917d-56209f68565d.png)
+
 
 ![theme1](https://user-images.githubusercontent.com/81038700/132940988-1380db78-e4d2-42f0-b58e-235a13106ccb.png)
 
