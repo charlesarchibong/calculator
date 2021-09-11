@@ -1,22 +1,15 @@
-import 'package:flutter/material.dart';
-import 'constants.dart';
-
-class Rectangle extends StatelessWidget {
-  final info;
-  Rectangle({this.info});
-  @override
-  Widget build(BuildContext context) {
-    return Expanded(
-      child: GestureDetector(
-        onTap: (){},
-        child: Container(
-          child: Center(child: Text(info,style: kNumberText,)),
-          decoration: BoxDecoration(
-              color: Color(0xFFC5F3F1),
-              borderRadius: BorderRadius.circular(10)
-          ),
-        ),
-      ),
-    );
-  }
-}
+Center(child: Text('HISTORY', style: TextStyle(fontWeight: FontWeight.bold,),)),
+           Expanded(
+             child: Container(
+               decoration: BoxDecoration(
+                   color: Colors.grey[300],
+                 borderRadius: BorderRadius.circular(20),
+               ),
+               child: ListView.builder(
+                 itemCount: widget.history.length,
+                   itemBuilder: (context, index){
+                   return ListTile(title: Text('${widget.history[index]}'));
+                   }
+               ),
+             ),
+           ),
