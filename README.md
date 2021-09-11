@@ -1,12 +1,20 @@
+INITIAL CALCULATOR THEME OR PAGE
 ![Initial Screen](https://user-images.githubusercontent.com/81038700/132940946-72273971-e6d0-4d5d-b94c-c53ce6f1be40.png)
 
+
+SETTINGS
 ![settings](https://user-images.githubusercontent.com/81038700/132940957-904e1f34-7b22-41b2-a2c5-6b2b15b9044a.png)
 
+
+HISTORY
 ![History](https://user-images.githubusercontent.com/81038700/132940968-8feed3e8-d95b-4de5-b109-c0badb7bbb62.png)
 
+
+GIF OF THEMES
 ![themes](https://user-images.githubusercontent.com/81038700/132941344-298a69e7-8134-4b53-b576-da94310a49f3.gif)
 
 
+SCREENSHOTS OF THEMES
 ![theme1](https://user-images.githubusercontent.com/81038700/132940988-1380db78-e4d2-42f0-b58e-235a13106ccb.png)
 
 ![theme2](https://user-images.githubusercontent.com/81038700/132941004-12271d8b-34c1-4af9-bb16-c2293161bfac.png)
@@ -19,5 +27,7 @@
 
 ![theme6](https://user-images.githubusercontent.com/81038700/132941029-f7f82404-6da8-4ca8-8d05-ee2455a6b74b.png)
 
+
+UPCOMING SCIENTIFIC CALCULATOR
 ![Scientific Calculator](https://user-images.githubusercontent.com/81038700/132941035-09af25a8-1b68-4a88-9810-55bbf9217e37.png)
 
